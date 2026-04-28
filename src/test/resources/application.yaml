@@ -2,11 +2,8 @@ spring:
   application:
     name: spring-ai-integration
   ai:
-    openai:
-      api-key: ${OPENAI_API_KEY} # Set this environment variable with your OpenAI API key	
-      model: gpt-4
-      temperature: 0.7
-      max-tokens: 2048
-      enabled: false	
+    google:
+      genai:
+        api-key: ${GOOGLE_GENAI_API_KEY}	
   datasource:
     url: jdbc:h2:mem:testdb
